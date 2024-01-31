@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/index.css">
+</head>
+<body>
+    <!-- this is just a little experiment playing around with css grid.
+ I had fund doing it and i think with a little bit more work this could become something really nice
+
+markup by luispato - https://www.instagram.com/luispaaaaato/
+
+All images are linked to pexels, where i got them. If you like them, go there and give them artist a shout out!
+-->
+<div class="container">
+    <h1><%= name%></h1>
+    <div class="grid">
+      <button class="grid__close" aria-label="Close the grid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="grid__close-icon">
+          <title>close</title>
+          <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></svg>
+      </button>
+      
+      <figure class="grid__figure" id="figure-one">
+        <img src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Leaves</h3>
+          <p class="grid__author">Sohail Nachiti</p>
+          <a href="https://www.pexels.com/photo/close-up-photography-of-leaves-with-droplets-807598/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-two">
+        <img src="https://images.pexels.com/photos/305827/pexels-photo-305827.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Green succulents</h3>
+          <p class="grid__author">Scott Webb</p>
+          <a href="https://www.pexels.com/photo/selective-focus-photography-of-green-succulents-305827/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-three">
+        <img src="https://images.pexels.com/photos/1549194/pexels-photo-1549194.jpeg" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Aloe Vera</h3>
+          <p class="grid__author">Elle Hughes</p>
+          <a href="https://www.pexels.com/photo/photo-of-green-aloe-vera-plants-1549194/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-four">
+        <img src="https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Plants</h3>
+          <p class="grid__author">Daniel Frese</p>
+          <a href="https://www.pexels.com/photo/photography-of-plants-1055379/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-five">
+        <img src="https://images.pexels.com/photos/1494067/pexels-photo-1494067.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Pink petaled flowers</h3>
+          <p class="grid__author">Chris G.</p>
+          <a href="https://www.pexels.com/photo/pink-petaled-flowers-with-leaves-1494067/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-six">
+        <img src="https://images.pexels.com/photos/1090977/pexels-photo-1090977.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Macro</h3>
+          <p class="grid__author">Irina Iriser</p>
+          <a href="https://www.pexels.com/photo/macro-photograph-of-grass-1090977/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-seven">
+        <img src="https://images.pexels.com/photos/1813513/pexels-photo-1813513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Close-up leaves</h3>
+          <p class="grid__author">Lina Kivaka</p>
+          <a href="https://www.pexels.com/photo/close-up-photo-of-leaves-1813513/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-eight">
+        <img src="https://images.pexels.com/photos/2090641/pexels-photo-2090641.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Monstera</h3>
+          <p class="grid__author">Leah Kelley</p>
+          <a href="https://www.pexels.com/photo/close-up-photo-of-swiss-cheese-plant-2090641/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="grid__figure" id="figure-nine">
+        <img src="https://images.pexels.com/photos/1073069/pexels-photo-1073069.jpeg" alt="" class="grid__image">
+        <figcaption class="grid__figcaption">
+          <h3 class="grid__title">Variegated leaves</h3>
+          <p class="grid__author">Brett Sayles</p>
+          <a href="https://www.pexels.com/photo/closeup-photo-of-green-variegated-leaf-plants-1073069/" class="grid__link" target="_blank"></a>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
